@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../fonts/Cormorant-Regular.woff2') format('woff2'),
+    url('../fonts/Cormorant-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prata';
+  src: url('../fonts/Prata-Regular.woff2') format('woff2'),
+    url('../fonts/Prata-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-color: #fff;
+  --main-font-size: 16px;
+  --bg-color: #222;
+  --hover-color: #ff6600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cormorant';
+  color: var(--main-color);
+  font-size: var(--main-font-size);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1280px;
+}
