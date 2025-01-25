@@ -27,13 +27,13 @@
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">About us</a>
+              <a href="#hero" class="nav__link">About us</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Features</a>
+              <a href="#features" class="nav__link">Features</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contact us</a>
+              <a href="#contact-us" class="nav__link">Contact us</a>
             </li>               
           </ul>
         </nav>
@@ -42,7 +42,7 @@
   </header>
   
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero__container">
         <div class="hero__info">
           <h1 class="hero__title">Your dream of a new home starts here</h1>
@@ -70,18 +70,18 @@
           <button class="hero__button" type="submit">Order</button>
         </div>
         <picture>
-          <source media="(max-width: 1024px)" srcset="img/img-1-mini.png">          
-          <img class="hero__img" src="img/img-1.png" alt="House">
+          <source media="(max-width: 1024px)" srcset="img/img-1-mini.jpg">          
+          <img class="hero__img" src="img/img-1.jpg" alt="House">
         </picture>        
       </div>
     </section>
     
-    <section class="features">      
+    <section class="features" id="features">      
       <div class="features__container">
         <h2 class="features__title">features</h2>
         <picture>
-          <source media="(max-width: 1024px)" srcset="img/img-2-mini.png">
-          <img class="features__img" src="img/img-2.png" alt="House">
+          <source media="(max-width: 1024px)" srcset="img/img-2-mini.jpg">
+          <img class="features__img" src="img/img-2.jpg" alt="House">
         </picture>        
         <div class="features__info">
           <ul class="features__list">
@@ -106,13 +106,13 @@
           <button class="features__button" type="submit">Order</button>
         </div>  
         <picture>
-          <source media="(max-width: 1024px)" srcset="img/img-3-mini.png">
-          <img class="features__img" src="img/img-3.png" alt="House">
+          <source media="(max-width: 1024px)" srcset="img/img-3-mini.jpg">
+          <img class="features__img" src="img/img-3.jpg" alt="House">
         </picture>        
       </div>
     </section>
 
-    <section class="contact-us">
+    <section class="contact-us" id="contact-us">
       <div class="container">
         <div class="contact-us__container">
           <div class="contact-us__info">
@@ -132,14 +132,73 @@
             </form>
           </div>
           <picture>
-            <source media="(max-width: 1024px)" srcset="img/img-4-mini.png">
-            <img class="contact-us__img" src="img/img-4.png" alt="House and woman">
+            <source media="(max-width: 1024px)" srcset="img/img-4-mini.jpg">
+            <img class="contact-us__img" src="img/img-4.jpg" alt="House and woman">
           </picture>          
-        </div>
-        
+        </div>        
       </div>
-    </section>    
-  
+    </section>     
   </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <nav class="footer__nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a href="#hero" class="footer-nav__link">About us</a>
+          </li>
+          <li class="footer-nav__item">
+            <a href="#features" class="footer-nav__link">Features</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact-us" class="footer-nav__link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__info">
+        <a class="footer__logo" href="#">
+          <img class="logo__img" src="img/logo.png" alt="Logo">
+        </a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link" title="Instagram">
+              <img class="social__icon" src="img/instagram.svg" alt="Instagram">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" title="Tiktok">
+              <img class="social__icon" src="img/tiktok.svg" alt="Tiktok">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" title="Linkedin">
+              <img class="social__icon" src="img/linkedin.svg" alt="Linkedin">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" title="Facebook">
+              <img class="social__icon" src="img/facebook.svg" alt="Facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" title="Telegram">
+              <img class="social__icon" src="img/telegram.svg" alt="Telegram">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link" title="Pinterest">
+              <img class="social__icon" src="img/pinterest.svg" alt="Pinterest">
+            </a>
+          </li>
+        </ul>
+        <button class="footer__button" type="submit">order</button>
+      </div>
+      <div class="footer__buttom">
+        <span class="footer__text">© 2024, Copyright.</span>
+        <span class="footer__text">Privacy policy</span>
+        <span class="footer__text">Terms of Use</span>
+      </div>      
+    </div>
+  </footer>
 </body>
 </html>
