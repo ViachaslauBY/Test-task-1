@@ -14,7 +14,7 @@
 </head>
 <body>
   <header class="header" id="header">
-    <div class="container">
+    <div class="wrapper">
       <div class="header__container">
         <a class="header__logo" href="#">
           <img class="logo__img" src="img/logo.png" alt="Logo">
@@ -34,7 +34,7 @@
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Contact us</a>
-            </li>              
+            </li>               
           </ul>
         </nav>
       </div>
@@ -43,39 +43,46 @@
   
   <main>
     <section class="hero">
-      <div class="container hero__container">
+      <div class="hero__container">
         <div class="hero__info">
           <h1 class="hero__title">Your dream of a new home starts here</h1>
-          <p class="hero__description">We offer unique solutions for buying, selling and renting real estate. Our experts
-            will help you find the perfect accommodation that suits your needs and budget.</p>
+          <p class="hero__description">We offer unique solutions for buying, selling and renting real estate.</p>
           <ul class="hero__list">
             <li class="hero__item">
               <img class="hero-item__img" src="img/check.png" alt="Сheck">
-              <span class="hero-item__text">Invest</span>
-              <span class="hero-item__price">$10 000</span>
-              <span class="hero-item__text">in real estate for maximum benefit</span>
-            </li>
+              <p class="hero-item__text">Invest<span class="hero-item__price">$10 000</span>
+                in real estate for maximum benefit
+              </p>              
+            </li>            
             <li class="hero__item">
-              <img class="hero-item__img" src="img/check.png" alt="Сheck">              
-              <span class="hero-item__price">30%</span>
-              <span class="hero-item__text">Exclusive conditions for investors!</span>
+              <img class="hero-item__img" src="img/check.png" alt="Сheck">
+              <p class="hero-item__text"> <span class="hero-item__price">30%</span>
+                Exclusive conditions for investors!
+              </p>                         
             </li>
             <li class="hero__item">
               <img class="hero-item__img" src="img/check.png" alt="Сheck">
-              <span class="hero-item__text">Get</span>
-              <span class="hero-item__price">17%</span>
-              <span class="hero-item__text">discount on agency services on your first transaction</span>
+              <p class="hero-item__text">Get<span class="hero-item__price">17%</span>
+                discount on agency services on your first transaction
+              </p>              
             </li>               
           </ul>
           <button class="hero__button" type="submit">Order</button>
         </div>
-        <img class="hero__img" src="img/img-1.png" alt="House">
+        <picture>
+          <source media="(max-width: 1024px)" srcset="img/img-1-mini.png">          
+          <img class="hero__img" src="img/img-1.png" alt="House">
+        </picture>        
       </div>
     </section>
     
-    <section class="features">
-      <div class="container features__container">
-        <img class="features__img" src="img/img-2.png" alt="House">
+    <section class="features">      
+      <div class="features__container">
+        <h2 class="features__title">features</h2>
+        <picture>
+          <source media="(max-width: 1024px)" srcset="img/img-2-mini.png">
+          <img class="features__img" src="img/img-2.png" alt="House">
+        </picture>        
         <div class="features__info">
           <ul class="features__list">
             <li class="features__item">
@@ -91,18 +98,47 @@
               <img class="features-item__img" src="img/check-2.png" alt="Check">
               <p class="features-item__text">We offer an individual approach to each client. Your goals are our priority</p>
             </li>
-
             <li class="features__item">
               <img class="features-item__img" src="img/check-2.png" alt="Check">
               <p class="features-item__text">We guarantee transparency, reliability and professionalism at every stage</p>
             </li>
           </ul>
           <button class="features__button" type="submit">Order</button>
-        </div>        
-        <img class="features__img" src="img/img-3.png" alt="House">
+        </div>  
+        <picture>
+          <source media="(max-width: 1024px)" srcset="img/img-3-mini.png">
+          <img class="features__img" src="img/img-3.png" alt="House">
+        </picture>        
       </div>
     </section>
-    
+
+    <section class="contact-us">
+      <div class="container">
+        <div class="contact-us__container">
+          <div class="contact-us__info">
+            <h2 class="contact-us__title">Contact us today to start the journey to your new home</h2>
+            <form class="contact-us__form" action="/submit" method="post">
+            <div class="form__group">              
+              <input class="form__input" type="text" id="username" name="username"  placeholder="Name">
+            </div>                     
+            <div class="form__group">              
+              <input class="form__input" type="email" id="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="form__group">
+              <input class="form__checkbox" type="checkbox" id="accept" value="I accept Privacy policy" name="accept">
+              <label class="form__label" for="accept">I accept Privacy policy</label>
+            </div>                       
+            <button class="form__button" type="submit">Submit</button>
+            </form>
+          </div>
+          <picture>
+            <source media="(max-width: 1024px)" srcset="img/img-4-mini.png">
+            <img class="contact-us__img" src="img/img-4.png" alt="House and woman">
+          </picture>          
+        </div>
+        
+      </div>
+    </section>    
   
   </main>
 </body>
